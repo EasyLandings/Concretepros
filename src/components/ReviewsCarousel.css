@@ -1,0 +1,62 @@
+.carousel {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto 46px;
+}
+.carousel-track {
+  position: relative;
+  min-height: 260px;
+}
+.review-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 30px 26px 26px;
+}
+.review-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rust);
+  border-bottom: 1px dashed var(--concrete);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+.review-quote {
+  font-size: 1.08rem;
+  margin-bottom: 18px;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.carousel-dots button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: var(--concrete);
+  padding: 0;
+}
+.carousel-dots button.active {
+  background: var(--orange);
+  width: 22px;
+  border-radius: 5px;
+  transition: width 0.2s ease, background 0.2s ease;
+}

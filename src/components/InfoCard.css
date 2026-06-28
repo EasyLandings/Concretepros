@@ -1,0 +1,44 @@
+.info-card {
+  background: var(--charcoal);
+  color: var(--cream);
+  border-radius: 6px;
+  padding: 28px;
+}
+.info-card h3 {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+.info-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: var(--concrete-light);
+}
+.info-line svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin-top: 2px;
+  color: var(--orange);
+}
+.hours-ticket {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  padding-top: 14px;
+  margin-top: 14px;
+  color: var(--concrete-light);
+}
+.hours-ticket div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.info-card .social-row {
+  margin-top: 20px;
+}
+.info-card .social-row a {
+  color: var(--concrete-light);
+}

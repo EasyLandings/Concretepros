@@ -1,0 +1,320 @@
+/* ============================================================
+   LEHIGH VALLEY CONCRETE PROS — design tokens
+   Ported 1:1 from the original static HTML build.
+   ============================================================ */
+
+:root {
+  --charcoal: #1C1A18;
+  --charcoal-soft: #2A2724;
+  --concrete: #A8A29B;
+  --concrete-light: #E7E2D9;
+  --cream: #F6F3ED;
+  --orange: #D9531E;
+  --orange-dark: #B84316;
+  --rust: #7C5031;
+  --line: #D8D2C6;
+
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --maxw: 1180px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--charcoal);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 64px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.section-alt {
+  background: var(--concrete-light);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 15px 26px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+  white-space: nowrap;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-primary {
+  background: var(--orange);
+  color: var(--cream);
+}
+.btn-primary:hover {
+  background: var(--orange-dark);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--cream);
+  border-color: rgba(246, 243, 237, 0.45);
+}
+.btn-ghost:hover {
+  border-color: var(--cream);
+}
+.btn-dark {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+.btn-dark:hover {
+  background: var(--charcoal-soft);
+}
+
+/* ---------- Section heading helper ---------- */
+.section-head {
+  max-width: 46ch;
+  margin-bottom: 40px;
+}
+.section-head h2 {
+  font-size: 1.9rem;
+  margin-top: 10px;
+}
+.section-head p {
+  color: var(--charcoal-soft);
+  margin-top: 12px;
+  opacity: 0.78;
+}
+
+/* ---------- Scroll-reveal (services / gallery tiles) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Gallery tile textures (shared by Home preview + Gallery page) ---------- */
+.tex-1 {
+  background: repeating-linear-gradient(100deg, #c9c2b4 0 3px, #b9b09f 3px 6px);
+}
+.tex-2 {
+  background-image: radial-gradient(#9a9282 1.6px, transparent 2px);
+  background-size: 9px 9px;
+  background-color: #bdb6a7;
+}
+.tex-3 {
+  background: linear-gradient(
+    135deg,
+    #8c8478 25%,
+    #a39b8d 25%,
+    #a39b8d 50%,
+    #8c8478 50%,
+    #8c8478 75%,
+    #a39b8d 75%
+  );
+  background-size: 24px 24px;
+}
+.tex-4 {
+  background: repeating-linear-gradient(0deg, #b3ab9c 0 4px, #a39a89 4px 8px);
+}
+.tex-5 {
+  background: repeating-linear-gradient(45deg, #928a7c 0 10px, #a89f8f 10px 20px);
+}
+.tex-6 {
+  background-image: radial-gradient(#aba18f 2px, transparent 2.5px);
+  background-size: 14px 14px;
+  background-color: #928a78;
+}
+
+/* ---------- Gallery grid + tiles (shared by Home preview + Gallery page) ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.gallery-tile {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+}
+.tile-texture {
+  position: absolute;
+  inset: 0;
+}
+.tile-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.72));
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
+}
+.gallery-more {
+  margin-top: 16px;
+}
+.gallery-actions {
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* ---------- Reviews grid + mini cards (shared by Home + Reviews page) ---------- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.mini-review {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+}
+.mini-review .review-stars {
+  margin-bottom: 10px;
+}
+.mini-review p {
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+.mini-review .review-author {
+  font-size: 0.74rem;
+}
+.review-stars {
+  display: flex;
+  gap: 3px;
+  color: var(--orange);
+}
+.review-stars svg {
+  width: 14px;
+  height: 14px;
+}
+.review-author {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--charcoal-soft);
+}
+.review-author b {
+  color: var(--charcoal);
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 96px 0;
+  }
+}

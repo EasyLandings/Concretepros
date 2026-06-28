@@ -1,0 +1,21 @@
+.reviews-page {
+  padding-top: 104px;
+}
+
+.reviews-cta {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.reviews-cta p {
+  color: var(--charcoal-soft);
+  opacity: 0.8;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 1024px) {
+  .reviews-page {
+    padding-top: 144px;
+  }
+}

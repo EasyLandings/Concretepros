@@ -1,0 +1,9 @@
+.gallery-page {
+  padding-top: 104px;
+}
+
+@media (min-width: 1024px) {
+  .gallery-page {
+    padding-top: 144px;
+  }
+}
