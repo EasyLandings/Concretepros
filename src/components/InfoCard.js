@@ -12,7 +12,7 @@ export default function InfoCard() {
 
       <div className="info-line">
         <PhoneIcon />
-        <span>(610) 814-2090</span>
+        <span>(484) 291-1365</span>
       </div>
       <div className="info-line">
         <MapPinIcon />
@@ -26,11 +26,11 @@ export default function InfoCard() {
       <div className="hours-ticket">
         <div>
           <span>Mon &ndash; Fri</span>
-          <span>7:00 AM &ndash; 6:00 PM</span>
+          <span>7:00 AM &ndash; 7:00 PM</span>
         </div>
         <div>
           <span>Saturday</span>
-          <span>8:00 AM &ndash; 2:00 PM</span>
+          <span>7:00 AM &ndash; 7:00 PM</span>
         </div>
         <div>
           <span>Sunday</span>
