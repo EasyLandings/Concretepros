@@ -6,7 +6,12 @@ export default function GalleryTile({ item }) {
 
   return (
     <figure className="gallery-tile reveal" ref={ref}>
-      <div className={`tile-texture ${item.texture}`} role="img" aria-label={item.ariaLabel}></div>
+         <img
+        src={item.image}
+        alt={item.ariaLabel}
+        loading="lazy"
+        decoding="async"
+      />
       <figcaption className="tile-caption">{item.caption}</figcaption>
     </figure>
   );

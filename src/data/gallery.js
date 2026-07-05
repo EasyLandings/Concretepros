@@ -1,19 +1,19 @@
 const gallery = [
   {
     id: 'g1',
-    texture: 'tex-1',
+   image: '/gallery/flagstone-stamped-concrete.jpg',
     caption: 'Stamped Patio \u2014 Bethlehem, PA',
     ariaLabel: 'Stamped patio project',
   },
   {
     id: 'g2',
-    texture: 'tex-2',
+    image: '/gallery/exposed-aggregate-sidewalk.jpg',
     caption: 'Exposed Aggregate Driveway \u2014 Allentown, PA',
     ariaLabel: 'Exposed aggregate driveway project',
   },
   {
     id: 'g3',
-    texture: 'tex-3',
+    image: '/gallery/Garage-Floor-Pad.jpg',
     caption: 'Garage Slab Pour \u2014 Easton, PA',
     ariaLabel: 'Garage slab pour project',
   },
