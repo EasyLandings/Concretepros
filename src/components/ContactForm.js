@@ -12,30 +12,27 @@ export default function ContactForm() {
       form.reportValidity();
       return;
     }
-
-    const payload = Object.fromEntries(new FormData(form).entries());
-
-    // TODO: point this at a real backend - e.g. an Express route that sends
-    // the lead through Resend the same way the 4EverLilys order emails work.
-    // This placeholder endpoint isn't wired up yet, so the form will fall
-    // straight through to the success state either way for now.
+  
+    const payload = new URLSearchParams(new FormData(form)).toString();
+  
     try {
-      await fetch('/api/contact', {
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: payload,
       });
-    } catch {
-      // Backend isn't connected yet - still show success so the UI matches
-      // the original design; wire up real error handling once /api/contact exists.
+      if (!res.ok) throw new Error('Submit failed');
+    } catch (err) {
+      console.error(err);
     }
-
+  
     setShowSuccess(true);
     form.reset();
   };
 
   return (
-    <form className="contact-form" ref={formRef} onSubmit={handleSubmit} noValidate>
+    <form className="contact-form" ref={formRef} name="contact" data-netlify="true" onSubmit={handleSubmit} noValidate>
+       <input type="hidden" name="form-name" value="contact" />
       <div className={`form-success ${showSuccess ? 'show' : ''}`} role="status">
         Thanks &mdash; your request has been received. We&rsquo;ll call or email you within one business day.
       </div>
