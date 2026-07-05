@@ -31,7 +31,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="contact-form" ref={formRef} name="contact" data-netlify="true" onSubmit={handleSubmit} noValidate>
+    <form className="contact-form" ref={formRef} name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} noValidate>
        <input type="hidden" name="form-name" value="contact" />
       <div className={`form-success ${showSuccess ? 'show' : ''}`} role="status">
         Thanks &mdash; your request has been received. We&rsquo;ll call or email you within one business day.
