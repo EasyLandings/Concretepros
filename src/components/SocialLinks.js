@@ -14,7 +14,7 @@ const LINKS = [
   },
   {
     label: 'Google reviews',
-    href: 'https://www.google.com/search?q=lehigh+valley+concrete+pros',
+    href: 'https://g.page/r/CRzdGvLTzd0CEAI/review',
     Icon: GoogleIcon,
   },
 ];

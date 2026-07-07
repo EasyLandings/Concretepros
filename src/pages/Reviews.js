@@ -40,7 +40,7 @@ export default function Reviews() {
           <div className="reviews-cta">
             <p>Had a good experience with us?</p>
             <a
-              href="https://www.google.com/search?q=lehigh+valley+concrete+pros"
+              href="https://g.page/r/CRzdGvLTzd0CEAI/review"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
