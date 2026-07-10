@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './ContactForm.css';
+import ReactGa from 'react-ga4'
 
 export default function ContactForm() {
   const formRef = useRef(null);
@@ -25,7 +26,11 @@ export default function ContactForm() {
     } catch (err) {
       console.error(err);
     }
-  
+    ReactGA.event({
+      category: 'Lead',
+      action: 'quote_form_submitted',
+      label: values.project || 'General',
+    });
     setShowSuccess(true);
     form.reset();
   };
