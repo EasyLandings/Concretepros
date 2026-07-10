@@ -7,8 +7,16 @@ import Gallery from './pages/Gallery';
 import Reviews from './pages/Reviews';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { trackPageView } from './analytics';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
   return (
     <div className="site">
       <ScrollToTop />
