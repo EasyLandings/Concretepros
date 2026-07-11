@@ -25,7 +25,7 @@ export default function InfoCard() {
       </div>
       <div className="info-line">
         <MapPinIcon />
-        <span>Allentown &middot; Bethlehem &middot; Easton &middot; Emmaus &middot; Macungie &middot; Whitehall</span>
+        <span>Allentown &middot; Bethlehem &middot; Easton &middot; Emmaus &middot; Macungie &middot; Whitehall &middot; Phillipsburg, Nj &middot; Hellertown &middot; Fountain Hill &middot; Tatamy &middot; Windgap &middot; Bangor &middot; Freemansburg &middot; Catasaqua &middot; And More! </span>
       </div>
       <div className="info-line">
         <ClockIcon />
