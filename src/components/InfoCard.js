@@ -2,8 +2,17 @@ import React from 'react';
 import { PhoneIcon, MapPinIcon, ClockIcon } from './Icons';
 import SocialLinks from './SocialLinks';
 import './InfoCard.css';
+import ReactGA from 'react-ga4';
+
 
 export default function InfoCard() {
+  const trackCall = () => {
+    ReactGA.event({
+      category: 'Lead',
+      action: 'phone_click',
+      label: 'navbar',
+    });
+  };
   return (
     <div className="info-card">
       <h3 className="eyebrow" style={{ color: 'var(--orange)' }}>
@@ -12,7 +21,7 @@ export default function InfoCard() {
 
       <div className="info-line">
         <PhoneIcon />
-        <span>(484) 291-1365</span>
+        <a href="tel:+14842911365" onClick={trackCall}>(484) 291-1365</a>
       </div>
       <div className="info-line">
         <MapPinIcon />
