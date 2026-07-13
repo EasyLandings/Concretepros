@@ -1,0 +1,54 @@
+/* ---------- Process list (Lehigh Valley Contractor page) ---------- */
+.process-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .process-list li {
+    position: relative;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--orange);
+    border-radius: 6px;
+    padding: 20px 20px 20px 44px;
+    line-height: 1.6;
+    color: var(--charcoal);
+  }
+  
+  .process-list li::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 26px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+  
+  .process-list li strong {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rust);
+  }
+  
+  /* On the alt/concrete-light background, keep cards white so they lift off the section */
+  .section-alt .process-list li {
+    background: #FFFFFF;
+  }
+  
+  @media (min-width: 1024px) {
+    .process-list {
+      gap: 20px;
+    }
+    .process-list li {
+      padding: 24px 24px 24px 48px;
+    }
+  }

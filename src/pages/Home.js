@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
 import BatchTicket from '../components/BatchTicket';
 import ServiceCard from '../components/ServiceCard';
@@ -60,7 +61,12 @@ export default function Home() {
             <h2>Six services, one crew</h2>
             <p>
               Every job, from a backyard patio to a commercial slab, gets concrete pour and finish tailored to the jobs requirements,
-               with a crew that cares about our customers. 
+               with a crew that cares about our customers satasfaction. 
+            </p>
+            <p style={{ marginTop: '12px' }}>
+              <Link to="/lehigh-valley-concrete-contractor" style={{ color: 'var(--orange)', fontFamily: 'var(--font-mono)', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                See how our process works →
+              </Link>
             </p>
           </div>
           <div className="services-grid">
