@@ -140,6 +140,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="service-areas-teaser" >
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span className="eyebrow">Serving the Whole Valley</span>
+          <h2>Allentown, Bethlehem, Easton &amp; Beyond</h2>
+          <p style={{ maxWidth: '52ch', margin: '12px auto 0', color: 'var(--charcoal-soft)', opacity: 0.78 }}>
+            Not sure if we cover your town, or curious what a driveway install
+            actually involves? We answered the questions homeowners ask us most.
+          </p>
+          <div className="hero-actions" style={{ justifyContent: 'center', marginTop: '24px' }}>
+            <Link to="/lehigh-valley-service-areas" className="btn btn-dark">
+              See Service Areas &amp; FAQs
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ================= CONTACT ================= */}
       <section id="contact" className="section-alt">
         <div className="container">

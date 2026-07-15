@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Reviews from './pages/Reviews';
+import LehighValleyServiceAreas from './pages/LehighValleyServiceAreas';
 import LvContractors from './pages/Lvcontractors';
 import ScrollToTop from './components/ScrollToTop';
 import NotFound from './pages/NotFound';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/lehigh-valley-concrete-contractor" element={<LvContractors />} />
+          <Route path="/lehigh-valley-service-areas" element={<LehighValleyServiceAreas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

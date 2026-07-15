@@ -1,0 +1,45 @@
+/* ---------- FAQ / Service Area Q&A blocks (Service Areas page) ---------- */
+.faq-item {
+    max-width: 46ch;
+    margin-bottom: 40px;
+  }
+  
+  .faq-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq-question {
+    font-family: var(--font-body);
+    text-transform: none;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: normal;
+    color: var(--charcoal);
+    margin-top: 10px;
+  }
+  
+  .faq-item p {
+    color: var(--charcoal-soft);
+    margin-top: 12px;
+    opacity: 0.78;
+  }
+  
+  .faq-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--orange);
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  .faq-link:hover {
+    color: var(--orange-dark);
+  }
+  
+  @media (min-width: 640px) {
+    .faq-item {
+      max-width: 60ch;
+    }
+  }
