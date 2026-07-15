@@ -58,6 +58,13 @@ export default function ContactForm() {
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="email" required />
         </div>
+        <div className="form-two">
+        <div className="form-row">
+          <label htmlFor="location">Location/Address</label>
+          <input id="location" name="location" type="location" required />
+        </div>
+        </div>
+
         <div className="form-row">
           <label htmlFor="project">Project type</label>
           <select id="project" name="project" required defaultValue="">
