@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+ {/* ================= FAQ Service Areas ================= */}
       <section id="service-areas-teaser" >
         <div className="container" style={{ textAlign: 'center' }}>
           <span className="eyebrow">Serving the Whole Valley</span>
