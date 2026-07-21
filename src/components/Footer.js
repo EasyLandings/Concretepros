@@ -29,7 +29,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-bottom">
-          &copy; 2026 Lehigh Valley Concrete Pros. Licensed &amp; Insured &middot; PA HIC #PA-118273. All rights reserved.
+          &copy; 2026 Lehigh Valley Concrete Pros. Licensed &amp; Insured &middot; PA HIC #PA-220334. All rights reserved.
         </div>
       </div>
     </footer>
