@@ -68,10 +68,10 @@ const LehighValleyServiceAreas = () => {
   return (
     <>
       <SEOHead
-        title="Concrete Contractor Service Areas | Lehigh Valley, PA | LVCP"
-        description="Concrete contractor serving Allentown, Bethlehem, Easton, Macungie, Saucon Valley & the greater Lehigh Valley, PA. Driveways, patios, foundations & repair."
-        path="/lehigh-valley-service-areas"
-      />
+  title="Concrete Contractor Serving the Lehigh Valley | Lehigh Valley Concrete Pros"
+  description="Licensed and insured concrete contractor serving Allentown, Bethlehem, Easton, Emmaus, Macungie, Whitehall, Hellertown and the greater Lehigh Valley, PA."
+  path="/lehigh-valley-service-areas"
+/>
 
       <script type="application/ld+json">
         {JSON.stringify(faqSchema)}
