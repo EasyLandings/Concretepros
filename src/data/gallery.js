@@ -1,9 +1,9 @@
 const gallery = [
   {
     id: 'g1',
-   image: '/gallery/flagstone-stamped-concrete.jpg',
+   image: '/gallery/bethlehem_patio.jpg',
     caption: 'Stamped Patio \u2014 Bethlehem, PA',
-    ariaLabel: 'Stamped patio project',
+    ariaLabel: 'Bethlehem patio project',
   },
   {
     id: 'g2',
