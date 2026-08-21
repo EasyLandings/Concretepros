@@ -27,7 +27,7 @@ const gallery = [
     id: 'g5',
     image: 'gallery/PatioWithSteps.png',
     caption: 'Retaining Wall \u2014 Macungie, PA',
-    ariaLabel: 'Retaining wall project',
+    ariaLabel: 'Patio and Steps',
   },
   {
     id: 'g6',
