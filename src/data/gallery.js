@@ -19,8 +19,8 @@ const gallery = [
   },
   {
     id: 'g4',
-    texture: 'tex-4',
-    caption: 'Walkway Resurface \u2014 Emmaus, PA',
+    image: 'gallery/Easton ReColor.jpg',
+    caption: 'Walkway Resurface \u2014 Easton, PA',
     ariaLabel: 'Walkway resurfacing project',
   },
   {
