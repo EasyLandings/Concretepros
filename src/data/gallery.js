@@ -2,7 +2,7 @@ const gallery = [
   {
     id: 'g1',
    image: '/gallery/bethlehem_patio.jpg',
-    caption: 'Stamped Patio \u2014 Bethlehem, PA',
+    caption: 'Broom finish Patio \u2014 Bethlehem, PA',
     ariaLabel: 'Bethlehem patio project',
   },
   {
