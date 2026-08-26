@@ -31,8 +31,8 @@ const gallery = [
   },
   {
     id: 'g6',
-    texture: 'tex-6',
-    caption: 'Broom-Finish Patio \u2014 Whitehall, PA',
+   image: '/gallery/palmerPatio.jpg',
+    caption: 'Broom-Finish Patio Extension \u2014 Whitehall, PA',
     ariaLabel: 'Broom finish patio project',
   },
 ];
