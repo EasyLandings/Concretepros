@@ -7,9 +7,9 @@ const gallery = [
   },
   {
     id: 'g2',
-    image: '/gallery/exposed-aggregate-sidewalk.jpg',
+    image: '/gallery/bethlehem_garage_transition.jpg',
     caption: 'Exposed Aggregate Driveway \u2014 Allentown, PA',
-    ariaLabel: 'Exposed aggregate driveway project',
+    ariaLabel: 'Bethlehem Garage Apron',
   },
   {
     id: 'g3',
