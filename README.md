@@ -39,7 +39,7 @@ config changed to match Vite's conventions.
 
 | What | Where | Search for |
 |---|---|---|
-| Phone number | `Navbar.js`'s quote link, `InfoCard.js`, `index.html` JSON-LD | `(610) 814-2090` / `+16108142090` |
+| Phone number | `Navbar.js`'s quote link, `InfoCard.js`, `index.html` JSON-LD | `(484) 291-1365` / `+14842911365` |
 | Email | `index.html` JSON-LD | `info@lehighvalleyconcretepros.com` |
 | Domain | `index.html`, `SEOHead.js`, `sitemap.xml`, `robots.txt` | `lehighvalleyconcretepros.com` |
 | PA HIC license number | `Footer.js` | `PA-118273` (a real PA Home Improvement Contractor registration number is legally required on advertising) |

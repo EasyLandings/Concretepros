@@ -20,7 +20,7 @@ const LvContractors = () => {
           "provider": {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
-            "telephone": "+1-610-814-2090",
+            "telephone": "+1-484-291-1365",
             "url": "https://www.lehighvalleyconcretepros.com/"
           },
           "areaServed": [
