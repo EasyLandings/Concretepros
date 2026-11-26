@@ -7,6 +7,12 @@ import Gallery from './pages/Gallery';
 import Reviews from './pages/Reviews';
 import LehighValleyServiceAreas from './pages/LehighValleyServiceAreas';
 import LvContractors from './pages/Lvcontractors';
+import Driveways from './pages/Driveways';
+import PatiosWalkways from './pages/PatiosWalkways';
+import FoundationsSlabs from './pages/FoundationsSlabs';
+import StampedDecorative from './pages/StampedDecorative';
+import RetainingWalls from './pages/RetainingWalls';
+import ConcreteRepair from './pages/ConcreteRepair';
 import ScrollToTop from './components/ScrollToTop';
 import NotFound from './pages/NotFound';
 import './App.css';
@@ -34,6 +40,12 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/lehigh-valley-concrete-contractor" element={<LvContractors />} />
           <Route path="/lehigh-valley-service-areas" element={<LehighValleyServiceAreas />} />
+          <Route path="/concrete-driveways" element={<Driveways />} />
+          <Route path="/concrete-patios-walkways" element={<PatiosWalkways />} />
+          <Route path="/concrete-foundations-slabs" element={<FoundationsSlabs />} />
+          <Route path="/stamped-decorative-concrete" element={<StampedDecorative />} />
+          <Route path="/retaining-walls" element={<RetainingWalls />} />
+          <Route path="/concrete-repair-resurfacing" element={<ConcreteRepair />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
