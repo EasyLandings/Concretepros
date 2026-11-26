@@ -30,6 +30,8 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           &copy; 2026 Lehigh Valley Concrete Pros. Licensed &amp; Insured &middot; PA HIC #PA-220334. All rights reserved.
+          <br />
+          520 Seip Ave, Nazareth, PA 18064 &middot; <a href="tel:+14842911365">(484) 291-1365</a>
         </div>
       </div>
     </footer>

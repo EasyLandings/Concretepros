@@ -5,7 +5,6 @@ import BatchTicket from '../components/BatchTicket';
 import ServiceCard from '../components/ServiceCard';
 import GalleryTile from '../components/GalleryTile';
 import ReviewsCarousel from '../components/ReviewsCarousel';
-import { StarIcon } from '../components/Icons';
 import ContactForm from '../components/ContactForm';
 import InfoCard from '../components/InfoCard';
 import services from '../data/services';
@@ -30,14 +29,10 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="container">
           <span className="hero-eyebrow eyebrow">Licensed &amp; Insured &middot; Serving the Lehigh Valley</span>
-          <h1>
-            Built to last.
-            <br />
-            Poured to <em>perfection.</em>
-          </h1>
+          <h1>Concrete Contractor in Allentown, Bethlehem &amp; Easton, PA</h1>
           <p className="lede">
-            From driveways to foundations, we mix, pour, and finish concrete that holds up to
-            Pennsylvania winters and decades of daily use.
+            Built to last. Poured to perfection. From driveways to foundations, we mix, pour,
+            and finish concrete that holds up to Pennsylvania winters and decades of daily use.
           </p>
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary">
@@ -60,8 +55,8 @@ export default function Home() {
             <span className="eyebrow">What We Pour</span>
             <h2>Six services, one crew</h2>
             <p>
-              Every job, from a backyard patio to a commercial slab, gets concrete pour and finish tailored to the jobs requirements,
-               with a crew that cares about our customers satasfaction. 
+              Every job, from a backyard patio to a commercial slab, gets concrete pour and finish tailored to the job's requirements,
+               with a crew that cares about our customers' satisfaction. 
             </p>
             <p style={{ marginTop: '12px' }}>
               <Link to="/lehigh-valley-concrete-contractor" style={{ color: 'var(--orange)', fontFamily: 'var(--font-mono)', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
@@ -122,21 +117,6 @@ export default function Home() {
 
           <ReviewsCarousel reviews={reviews} />
 
-          <div className="reviews-grid">
-            {reviews.map((r) => (
-              <div className="mini-review" key={r.id}>
-                <div className="review-stars" aria-label={`${r.rating} out of 5 stars`}>
-                  {Array.from({ length: r.rating }).map((_, i) => (
-                    <StarIcon key={i} />
-                  ))}
-                </div>
-                <p>&ldquo;{r.text}&rdquo;</p>
-                <div className="review-author">
-                  <b>{r.name}</b> &mdash; {r.location}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
  {/* ================= FAQ Service Areas ================= */}
