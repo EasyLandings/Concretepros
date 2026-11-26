@@ -21,7 +21,15 @@ const LvContractors = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },

@@ -6,7 +6,7 @@ const FoundationsSlabs = () => {
   return (
     <>
       <SEOHead
-        title="Concrete Foundations & Slabs in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Concrete Foundations & Slabs in Allentown, Bethlehem & Easton, PA"
         description="Footings, basement slabs, and garage pads poured to code across the Lehigh Valley — engineered for your soil and priced per job, not per square foot out of thin air. Free on-site estimates."
         path="/concrete-foundations-slabs"
       />
@@ -20,7 +20,15 @@ const FoundationsSlabs = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -97,6 +105,19 @@ const FoundationsSlabs = () => {
               township. We identify which borough or township has jurisdiction, confirm what
               documentation they require, and submit the application on your behalf where
               possible. We don't schedule a pour date until we're cleared to work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="foundationsslabs-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/stamped-decorative-concrete">Stamped &amp; decorative concrete</Link> and <Link to="/retaining-walls">Retaining walls</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

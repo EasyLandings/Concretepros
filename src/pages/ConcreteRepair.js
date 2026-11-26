@@ -6,7 +6,7 @@ const ConcreteRepair = () => {
   return (
     <>
       <SEOHead
-        title="Concrete Repair & Resurfacing in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Concrete Repair & Resurfacing in Allentown, Bethlehem & Easton, PA"
         description="Concrete repair and resurfacing across the Lehigh Valley — spalling, settling, and cracked slabs leveled and brought back to a clean finish, or an honest call when replacement is smarter. Free on-site estimates."
         path="/concrete-repair-resurfacing"
       />
@@ -20,7 +20,15 @@ const ConcreteRepair = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -101,6 +109,19 @@ const ConcreteRepair = () => {
               Repair work is often the small stuff — a settling step, a cracked walkway
               section, a spalled stoop. We take those jobs too. A front step that trips
               everyone who visits is worth fixing right, even if it's a half-day job.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="concreterepair-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/concrete-driveways">Concrete driveways</Link> and <Link to="/concrete-patios-walkways">Concrete patios &amp; walkways</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

@@ -50,6 +50,11 @@ export default function Reviews() {
             Every job starts with a free on-site estimate &mdash; no obligation, and no
             charge to have us walk your property and talk through what it needs.
           </p>
+          <p>
+            If you had work done with us and something is not right, call us first &mdash;
+            we would rather make it right than have you live with it. Good concrete
+            should last, and we stand behind the pours we put in the ground.
+          </p>
 
           <div className="reviews-cta">
             <p>Had a good experience with us?</p>

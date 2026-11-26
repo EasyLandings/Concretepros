@@ -6,7 +6,7 @@ const Driveways = () => {
   return (
     <>
       <SEOHead
-        title="Concrete Driveways in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Concrete Driveways in Allentown, Bethlehem & Easton, PA"
         description="Concrete driveway installation and replacement across the Lehigh Valley — tear-out, stone base, reinforcement, and a 4,000 PSI pour built for salt, snow, and daily traffic. Free on-site estimates."
         path="/concrete-driveways"
       />
@@ -20,7 +20,15 @@ const Driveways = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -118,6 +126,19 @@ const Driveways = () => {
               replacement might be exempt in one municipality and need a permit in the next.
               We check what your town requires and handle the application where possible, so
               the job doesn't stall waiting on paperwork.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="driveways-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/concrete-patios-walkways">Concrete patios &amp; walkways</Link> and <Link to="/concrete-foundations-slabs">Concrete foundations &amp; slabs</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

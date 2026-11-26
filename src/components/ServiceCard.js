@@ -12,7 +12,7 @@ export default function ServiceCard({ service }) {
       <h3>{service.name}</h3>
       <p>{service.description}</p>
       <Link to={service.path} style={{ color: 'var(--orange)', fontFamily: 'var(--font-mono)', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-        Learn more &rarr;
+        Learn more about {service.name} &rarr;
       </Link>
     </div>
   );

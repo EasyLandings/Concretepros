@@ -6,7 +6,7 @@ const RetainingWalls = () => {
   return (
     <>
       <SEOHead
-        title="Retaining Walls in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Retaining Walls in Allentown, Bethlehem & Easton, PA"
         description="Concrete retaining walls across the Lehigh Valley — holding back grade and groundwater on sloped lots, with proper drainage and footings. Free on-site estimates."
         path="/retaining-walls"
       />
@@ -20,7 +20,15 @@ const RetainingWalls = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -99,6 +107,19 @@ const RetainingWalls = () => {
               Easton, we've seen what these slopes do to a yard over a few winters. The wall
               gets built for your specific slope, soil, and water — not a generic design
               copied from somewhere flat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="retainingwalls-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/concrete-repair-resurfacing">Concrete repair &amp; resurfacing</Link> and <Link to="/concrete-driveways">Concrete driveways</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

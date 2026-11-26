@@ -6,7 +6,7 @@ const StampedDecorative = () => {
   return (
     <>
       <SEOHead
-        title="Stamped & Decorative Concrete in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Stamped & Decorative Concrete in Allentown, Bethlehem & Easton, PA"
         description="Stamped concrete patios, walkways, and driveways across the Lehigh Valley — stone, brick, or slate patterns and color, without the stone, brick, or slate price tag. Free on-site estimates."
         path="/stamped-decorative-concrete"
       />
@@ -20,7 +20,15 @@ const StampedDecorative = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -98,6 +106,19 @@ const StampedDecorative = () => {
               walkways where you see it up close every day. For heavy vehicle traffic we talk
               through the trade-offs with you first — pattern and color hold up fine, but a
               driveway takes more abuse than a patio, so the finish choice matters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stampeddecorative-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/retaining-walls">Retaining walls</Link> and <Link to="/concrete-repair-resurfacing">Concrete repair &amp; resurfacing</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

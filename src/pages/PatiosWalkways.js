@@ -6,7 +6,7 @@ const PatiosWalkways = () => {
   return (
     <>
       <SEOHead
-        title="Concrete Patios & Walkways in Allentown, Bethlehem & Easton, PA | Lehigh Valley Concrete Pros"
+        title="Concrete Patios & Walkways in Allentown, Bethlehem & Easton, PA"
         description="Concrete patios and walkways across the Lehigh Valley — broom-finished or stamped, sized and shaped for how you use your yard, with proper grading and drainage. Free on-site estimates."
         path="/concrete-patios-walkways"
       />
@@ -20,7 +20,15 @@ const PatiosWalkways = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
-            "url": "https://www.lehighvalleyconcretepros.com/"
+            "url": "https://www.lehighvalleyconcretepros.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "520 Seip Ave",
+              "addressLocality": "Nazareth",
+              "addressRegion": "PA",
+              "postalCode": "18064",
+              "addressCountry": "US"
+            }
           },
           "areaServed": [
             { "@type": "City", "name": "Allentown, PA" },
@@ -98,6 +106,19 @@ const PatiosWalkways = () => {
               right against the house where a failure is hardest to ignore. Compacted stone
               base, reinforcement, and our standard 4,000 PSI mix are how we keep them flat
               and crack-free through Lehigh Valley winters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="patioswalkways-related">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Related Services</span>
+            <h2>More concrete work we do</h2>
+            <p>
+              <Link to="/concrete-foundations-slabs">Concrete foundations &amp; slabs</Link> and <Link to="/stamped-decorative-concrete">Stamped &amp; decorative concrete</Link> &mdash; poured
+              by the same crew, with the same free on-site estimate.
             </p>
           </div>
         </div>

@@ -39,6 +39,12 @@ export default function Gallery() {
               when you reach out &mdash; we will tell you what went into it and what
               something like it would take on your property.
             </p>
+            <p>
+              Most of these jobs started the same way yours would &mdash; a free on-site
+              estimate, a written price, and a crew that shows up when promised. If you
+              want to see a finish up close before you decide, ask us for a recent job
+              near you.
+            </p>
           </div>
 
           <div className="gallery-grid">
