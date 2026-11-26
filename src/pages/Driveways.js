@@ -20,6 +20,8 @@ const Driveways = () => {
             "@type": "GeneralContractor",
             "name": "Lehigh Valley Concrete Pros",
             "telephone": "+1-484-291-1365",
+            "priceRange": "$$",
+            "image": "https://www.lehighvalleyconcretepros.com/og-cover.svg",
             "url": "https://www.lehighvalleyconcretepros.com/",
             "address": {
               "@type": "PostalAddress",
