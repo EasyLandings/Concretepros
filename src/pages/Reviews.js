@@ -19,6 +19,15 @@ export default function Reviews() {
             <span className="eyebrow">From the Job Sites</span>
             <h1>What Homeowners Say</h1>
             <p>Real feedback from projects around Allentown, Bethlehem, Easton, and the surrounding townships.</p>
+            <p>
+              We hold a 4.9-star average across our Google reviews, and the feedback
+              below comes from real projects &mdash; driveways, patios, foundations,
+              retaining walls, and repair work for homeowners across the Valley. If we
+              have poured for you and you would like to leave a review, the link below
+              takes you to our Google review page. And if you are still deciding who
+              to hire, ask us for references &mdash; we are glad to connect you with a
+              homeowner nearby whose project we finished.
+            </p>
           </div>
 
           <div className="reviews-grid">
@@ -36,6 +45,11 @@ export default function Reviews() {
               </div>
             ))}
           </div>
+
+          <p>
+            Every job starts with a free on-site estimate &mdash; no obligation, and no
+            charge to have us walk your property and talk through what it needs.
+          </p>
 
           <div className="reviews-cta">
             <p>Had a good experience with us?</p>
